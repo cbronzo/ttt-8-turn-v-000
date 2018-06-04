@@ -30,13 +30,18 @@ def turn(board)
   index = input_to_index(number)
   if valid_move?(board,index)
      move(board, index, value="X")
-    else loop do
-            turn(board)
-            break
-          end
+    else turn(board)
     end
   display_board(board)
 end
  
+ #or (but this is uncessary loop)
+ #if valid_move?(board,index)
+     #move(board, index, value="X")
+    #else loop do
+            #turn(board)
+            #break
+          #end
+    #end
       
 
